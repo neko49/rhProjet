@@ -26,11 +26,11 @@ const ProfileContent = () => {
 
     return (
         <>
-            <h5 className="card-title">Welcome {accounts[0].name}</h5>
+            <h5 className="card-title">Bienvenue {accounts[0].name}</h5>
             {graphData ? 
                 <ProfileData graphData={graphData} />
                 :
-                <Button variant="secondary" onClick={RequestProfileData}>Request Profile Information</Button>
+                <Button variant="secondary" onClick={RequestProfileData}>Information de votre profil</Button>
             }
         </>
     );
@@ -47,7 +47,7 @@ const MainContent = () => {
             </AuthenticatedTemplate>
 
             <UnauthenticatedTemplate>
-                <h5 className="card-title">Please sign-in to see your profile information.</h5>
+                <h5 className="card-title">Connectez-vous pour voir les informations de votre profil.</h5>
             </UnauthenticatedTemplate>
         </div>
     );
